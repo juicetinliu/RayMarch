@@ -13,4 +13,6 @@ function setupHTML(){
   let button2 = new Button(bottomGroup, ['#e9e9e9', '#FFFFFF'], 'https://p5js.org', 'https://p5js.org/assets/img/asterisk-01.png', 'P5.js');
   
   main.createHTML();
+  
+  canv.HTML.mousePressed(toggleLock);
 }

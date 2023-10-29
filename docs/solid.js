@@ -47,7 +47,6 @@ class InfSpheres extends Solid{
         let p = moduloPVec(viewVector.copy(), 10).sub(this.pos);
         return p.mag() - this.r;
     }
-    
 }
   
 function distToAllSurfaces(viewVector){

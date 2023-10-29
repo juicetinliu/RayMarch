@@ -5,14 +5,16 @@ let mainEye;
 function setup() {
   setupHTML();
   pixelDensity(1);
-  mainEye = new Eye(0, 0, 0);
+  mainEye = new Eye(-14, 28, -2, 0.984, 2.278);
   createScene();
+  // noLoop();
 }
 
 
 function draw() {
-    mainEye.move(1);
-    mainEye.see();
+  mainEye.move(1);
+  mainEye.see();
+    // console.log("DONE")
 }
 
 

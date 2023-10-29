@@ -1,4 +1,5 @@
 let isLeft, isRight, isUp, isDown, isFloat, isSink; 
+let mouseLocked = false;
 
 function keyPressed(){
     setMove(keyCode, true);
@@ -42,5 +43,15 @@ function setMove(key, b){
             
         default:
             return b;
+    }
+}
+
+function toggleLock(){
+    if (!mouseLocked) {
+        mouseLocked = true;
+        requestPointerLock();
+    } else {
+        exitPointerLock();
+        mouseLocked = false;
     }
 }
